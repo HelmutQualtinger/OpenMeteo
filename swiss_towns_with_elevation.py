@@ -1,0 +1,203 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generate Swiss towns with elevation data and export to CSV.
+Format: name, canton, population, latitude, longitude, elevation
+"""
+
+import csv
+from pathlib import Path
+
+# Swiss towns with elevation (meters above sea level) - German names for French regions
+towns = [
+    ("Zurich", "Zurich", 415215, 47.3769, 8.5472, 408),
+    ("Genf", "Genf", 190637, 46.2022, 6.1432, 375),
+    ("Basel", "Basel-Stadt", 173863, 47.5596, 7.5886, 260),
+    ("Bern", "Bern", 133115, 46.9479, 7.4474, 541),
+    ("Lausanne", "Waadt", 140099, 46.5197, 6.6323, 372),
+    ("Winterthur", "Zurich", 114186, 47.5000, 8.7250, 439),
+    ("Luzern", "Luzern", 81859, 47.0502, 8.3093, 434),
+    ("Sankt Gallen", "Sankt Gallen", 76458, 47.4229, 9.3767, 661),
+    ("Lugano", "Tessin", 63335, 46.0051, 8.9463, 273),
+    ("Biel/Bienne", "Bern", 54762, 47.1384, 7.2474, 426),
+    ("Thun", "Bern", 43743, 46.7569, 7.6253, 559),
+    ("Koeniz", "Bern", 42089, 46.9055, 7.4397, 560),
+    ("Chur", "Graubuenden", 33395, 46.8547, 9.5302, 596),
+    ("Davos", "Graubuenden", 11165, 46.8055, 9.8355, 1560),
+    ("Klosters", "Graubuenden", 4050, 46.8869, 9.8736, 1180),
+    ("Arosa", "Graubuenden", 2832, 46.7794, 9.8339, 1739),
+    ("Ilanz", "Graubuenden", 3002, 46.8675, 9.0936, 655),
+    ("Disentis", "Graubuenden", 2700, 46.6578, 8.6789, 1186),
+    ("Tiefencastel", "Graubuenden", 1500, 46.6411, 9.5628, 1087),
+    ("Thusis", "Graubuenden", 2120, 46.6545, 9.4167, 701),
+    ("Sils", "Graubuenden", 1650, 46.4461, 10.3389, 1797),
+    ("Pontresina", "Graubuenden", 2270, 46.4961, 10.4939, 1805),
+    ("Sankt Moritz", "Graubuenden", 3192, 46.4980, 10.3344, 1856),
+    ("Filisur", "Graubuenden", 895, 46.5961, 9.7256, 1131),
+    ("Preda", "Graubuenden", 290, 46.5614, 9.7736, 1730),
+    ("Berguen", "Graubuenden", 445, 46.6236, 9.8575, 1388),
+    ("Fideris", "Graubuenden", 1189, 46.9425, 9.8236, 1085),
+    ("Felberthal", "Graubuenden", 340, 46.8928, 10.0264, 1515),
+    ("Schiers", "Graubuenden", 1800, 46.9575, 9.7264, 1023),
+    ("Jenins", "Graubuenden", 890, 46.9611, 9.6625, 1068),
+    ("Seewis im Prättigau", "Graubuenden", 1755, 46.9886, 9.6364, 1098),
+    ("Langwies", "Graubuenden", 1280, 47.0169, 9.6933, 1078),
+    ("Serneus", "Graubuenden", 1350, 47.0486, 9.8022, 1410),
+    ("Fribourg", "Freiburg", 38267, 46.8050, 7.1605, 629),
+    ("Schaffhausen", "Schaffhausen", 36958, 47.6973, 8.6361, 364),
+    ("Neuenburg", "Neuenburg", 31915, 47.0010, 6.9325, 429),
+    ("Uster", "Zurich", 36476, 47.3398, 8.7065, 480),
+    ("Sitten", "Wallis", 34399, 46.2181, 7.5632, 482),
+    ("Wetzikon", "Zurich", 25571, 47.3239, 8.7954, 533),
+    ("Montreux", "Waadt", 26778, 46.4334, 6.9118, 372),
+    ("Rapperswil-Jona", "Sankt Gallen", 27865, 47.2286, 8.8149, 407),
+    ("Duebendorf", "Zurich", 28889, 47.4060, 8.6112, 440),
+    ("Kriens", "Luzern", 30206, 47.0550, 8.3025, 456),
+    ("Zug", "Zug", 30261, 47.1733, 8.5170, 424),
+    ("Affoltern am Albis", "Zurich", 20098, 47.2856, 8.4697, 494),
+    ("Altstetten", "Zurich", 24851, 47.3742, 8.4661, 410),
+    ("Wil", "Sankt Gallen", 24303, 47.4791, 8.7431, 610),
+    ("Wadenswil", "Zurich", 23020, 47.2122, 8.6847, 410),
+    ("Kilchberg", "Zurich", 14068, 47.2908, 8.5653, 435),
+    ("Adliswil", "Zurich", 18816, 47.3031, 8.5178, 445),
+    ("Urdorf", "Zurich", 13154, 47.3561, 8.3778, 450),
+    ("Spreitenbach", "Zurich", 13697, 47.3769, 8.3508, 440),
+    ("Dietikon", "Zurich", 27751, 47.4333, 8.4083, 380),
+    ("Buchs", "Zurich", 12872, 47.4842, 8.3792, 360),
+    ("Regensdorf", "Zurich", 15524, 47.4592, 8.4300, 400),
+    ("Birmensdorf", "Zurich", 10063, 47.4083, 8.4325, 420),
+    ("Oetwil am See", "Zurich", 12085, 47.3381, 8.6714, 395),
+    ("Herrliberg", "Zurich", 11081, 47.2903, 8.7039, 410),
+    ("Feldmeilen", "Zurich", 12631, 47.2761, 8.7014, 415),
+    ("Meilen", "Zurich", 14297, 47.2703, 8.6964, 420),
+    ("Staefa", "Zurich", 13929, 47.2567, 8.7186, 415),
+    ("Kueesnacht", "Zurich", 11800, 47.2947, 8.5780, 445),
+    ("Zollikon", "Zurich", 11871, 47.3158, 8.5942, 430),
+    ("Uetikon am See", "Zurich", 12353, 47.3036, 8.5992, 435),
+    ("Erlenbach", "Zurich", 10127, 47.3156, 8.5547, 440),
+    ("Faellanden", "Zurich", 11707, 47.3236, 8.5897, 435),
+    ("Greifensee", "Zurich", 11959, 47.3536, 8.6461, 415),
+    ("Volketswil", "Zurich", 12639, 47.3714, 8.6772, 440),
+    ("Bubikon", "Zurich", 12836, 47.3650, 8.8131, 500),
+    ("Bauma", "Zurich", 10126, 47.3929, 8.8381, 570),
+    ("Fehraltorf", "Zurich", 10545, 47.4058, 8.8461, 550),
+    ("Gossau", "Zurich", 16920, 47.4239, 8.8583, 590),
+    ("Andelfingen", "Zurich", 9698, 47.6583, 8.7225, 445),
+    ("Eglisau", "Zurich", 8995, 47.6071, 8.5525, 380),
+    ("Glattfelden", "Zurich", 9098, 47.5644, 8.6003, 395),
+    ("Frauenfeld", "Thurgau", 27570, 47.5536, 8.8933, 406),
+    ("Amriswil", "Thurgau", 12852, 47.5328, 9.0564, 398),
+    ("Romanshorn", "Thurgau", 8973, 47.5664, 8.9631, 405),
+    ("Arbon", "Thurgau", 14952, 47.4667, 9.4300, 400),
+    ("Diessenhofen", "Thurgau", 3627, 47.6747, 8.6122, 375),
+    ("Kreuzlingen", "Thurgau", 7750, 47.6658, 8.7650, 398),
+    ("Buchs", "Sankt Gallen", 7915, 47.1922, 9.4747, 523),
+    ("Sargans", "Sankt Gallen", 6099, 47.4464, 9.4461, 520),
+    ("Mels", "Sankt Gallen", 7203, 47.4197, 9.3844, 568),
+    ("Walenstadt", "Sankt Gallen", 4155, 47.1425, 9.2708, 423),
+    ("Glarus", "Glarus", 12067, 46.9583, 9.0667, 470),
+    ("Schwyz", "Schwyz", 16253, 47.4150, 8.6658, 640),
+    ("Einsiedeln", "Schwyz", 16144, 47.1331, 8.7603, 910),
+    ("Steinen", "Schwyz", 5169, 47.2183, 8.6225, 630),
+    ("Stans", "Nidwalden", 8247, 46.9609, 8.3661, 455),
+    ("Ennetmoos", "Nidwalden", 4485, 46.9742, 8.3956, 467),
+    ("Sarnen", "Obwalden", 10347, 46.8678, 8.2439, 471),
+    ("Giswil", "Obwalden", 2696, 46.8081, 8.2583, 585),
+    ("Meiringen", "Bern", 9746, 46.7328, 8.3044, 595),
+    ("Interlaken", "Bern", 3782, 46.6833, 8.1667, 567),
+    ("Grindelwald", "Bern", 3724, 46.6167, 8.3333, 1034),
+    ("Lauterbrunnen", "Bern", 1937, 46.5958, 8.3172, 796),
+    ("Brienz", "Bern", 2709, 46.7467, 8.3158, 566),
+    ("Burgdorf", "Bern", 9362, 47.1856, 8.3319, 453),
+    ("Langenthal", "Bern", 15598, 47.2122, 8.3922, 418),
+    ("Solothurn", "Solothurn", 17360, 47.2019, 7.5347, 432),
+    ("Olten", "Solothurn", 17749, 47.3436, 7.9083, 398),
+    ("Grenchen", "Solothurn", 17154, 47.1819, 7.7733, 430),
+    ("Sursee", "Luzern", 10241, 47.1722, 8.1011, 503),
+    ("Hochdorf", "Luzern", 8066, 47.1242, 8.2342, 459),
+    ("Emmen", "Luzern", 12549, 47.0639, 8.3764, 489),
+    ("Adligenswil", "Luzern", 7268, 47.0306, 8.3686, 469),
+    ("Ebikon", "Luzern", 12282, 47.1083, 8.4281, 450),
+    ("Sins", "Aargau", 5891, 47.2736, 8.2986, 404),
+    ("Muri", "Aargau", 4845, 47.2961, 8.3889, 425),
+    ("Wettingen", "Aargau", 23169, 47.4831, 8.3089, 330),
+    ("Ennetbaden", "Aargau", 8191, 47.4892, 8.3039, 320),
+    ("Turgi", "Aargau", 8537, 47.4928, 8.3550, 338),
+    ("Rheinfelden", "Aargau", 12213, 47.5364, 7.7894, 278),
+    ("Liestal", "Basel-Land", 13583, 47.4833, 7.7333, 308),
+    ("Augst", "Basel-Land", 3521, 47.5325, 7.7200, 285),
+    ("Baden", "Aargau", 16121, 47.4714, 8.3051, 378),
+    ("Aarau", "Aargau", 21404, 47.3901, 8.0510, 361),
+    ("Brugg", "Aargau", 10000, 47.4845, 8.2063, 339),
+    ("Bellinzona", "Tessin", 18373, 46.1978, 9.0165, 230),
+    ("Locarno", "Tessin", 15175, 46.1667, 8.7833, 196),
+    ("Ascona", "Tessin", 5768, 46.1581, 8.7658, 196),
+    ("Mendrisio", "Tessin", 7300, 45.8939, 8.9813, 243),
+    ("Chiasso", "Tessin", 9049, 45.8312, 8.9465, 225),
+    ("Porrentruy", "Jura", 6663, 47.4481, 7.0717, 440),
+    ("Delemont", "Jura", 11502, 47.3645, 7.3388, 420),
+    ("Saignelegier", "Jura", 2530, 47.3947, 6.8325, 925),
+    ("Courrendlin", "Jura", 2880, 47.3642, 7.3611, 425),
+    ("Yverdon-les-Bains", "Waadt", 29639, 46.6200, 6.6406, 435),
+    ("Vevey", "Waadt", 19353, 46.4621, 6.8413, 375),
+    ("Pully", "Waadt", 18222, 46.5045, 6.6753, 375),
+    ("Nyon", "Waadt", 31247, 46.3831, 6.2402, 380),
+    ("Renens", "Waadt", 31503, 46.5303, 6.5809, 385),
+    ("Echallens", "Waadt", 7170, 46.7084, 6.6361, 628),
+    ("Morges", "Waadt", 14903, 46.4967, 6.5042, 390),
+    ("Cully", "Waadt", 1480, 46.4286, 6.7497, 455),
+    ("Aigle", "Waadt", 10405, 46.3239, 6.9344, 390),
+    ("Monthey", "Wallis", 16733, 46.2774, 6.7722, 385),
+    ("Martigny", "Wallis", 15912, 46.1018, 7.7512, 593),
+    ("Sierre", "Wallis", 15999, 46.3018, 7.5413, 570),
+    ("Le Chamois", "Wallis", 780, 46.4706, 7.5739, 1020),
+    ("Vercorin", "Wallis", 620, 46.4033, 7.6233, 1400),
+    ("Grimentz", "Wallis", 270, 46.3772, 7.5986, 1572),
+    ("Ried-Brig", "Wallis", 15000, 46.3117, 8.2572, 681),
+    ("Bulle", "Freiburg", 20246, 46.6189, 7.2594, 768),
+    ("Romont", "Freiburg", 5800, 46.6219, 7.0583, 814),
+    ("La Chaux-de-Fonds", "Neuenburg", 39474, 47.1007, 6.8228, 1017),
+    ("Le Locle", "Neuenburg", 9547, 47.0525, 6.7497, 951),
+    ("Fleurier", "Neuenburg", 3900, 47.0061, 6.8217, 712),
+    ("Couvet", "Neuenburg", 3524, 47.0447, 6.7342, 804),
+    ("Valangin", "Neuenburg", 2650, 47.0086, 6.9650, 582),
+    ("Fontaines", "Neuenburg", 2440, 47.0308, 6.9308, 574),
+    ("Ste-Croix", "Waadt", 4460, 46.8158, 6.4731, 1114),
+    ("Les Geneveys-sur-Coffrane", "Neuenburg", 2730, 47.1167, 7.0000, 565),
+    ("Dombresson", "Neuenburg", 3450, 47.0361, 6.8925, 734),
+    ("Cressier", "Neuenburg", 3100, 47.0608, 7.0381, 425),
+    ("Savagnier", "Neuenburg", 2050, 47.0614, 6.9825, 564),
+    ("Bry", "Neuenburg", 1830, 47.0483, 6.9286, 560),
+    ("Engollon", "Neuenburg", 820, 47.1167, 6.8333, 660),
+    ("Villiers", "Neuenburg", 2100, 47.0319, 6.9614, 565),
+    ("Cernier", "Neuenburg", 3630, 47.0975, 6.9119, 620),
+    ("La Brevine", "Neuenburg", 840, 47.0908, 6.6500, 1042),
+    ("Les Brenets", "Neuenburg", 470, 47.0611, 6.6889, 900),
+    ("Saules", "Neuenburg", 2030, 47.1569, 6.8986, 625),
+]
+
+def main():
+    """Generate Swiss towns data and save to CSV."""
+    print("Generating Swiss towns data with elevation...")
+
+    # Get output CSV file path
+    csv_file = Path(__file__).parent / 'swiss_towns_data.csv'
+
+    # Write to CSV
+    try:
+        with open(csv_file, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['name', 'canton', 'population', 'latitude', 'longitude', 'elevation'])
+
+            for town in towns:
+                name, canton, population, latitude, longitude, elevation = town
+                writer.writerow([name, canton, population, latitude, longitude, elevation])
+
+        print(f"Successfully generated {len(towns)} Swiss towns")
+        print(f"Data saved to: {csv_file}")
+
+    except Exception as e:
+        print(f"Error writing to CSV: {e}")
+
+if __name__ == '__main__':
+    main()

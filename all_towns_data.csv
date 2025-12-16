@@ -1,0 +1,193 @@
+name,population,latitude,longitude,elevation,country,region
+Wien,1915502,48.2082,16.3738,171,AT,Wien
+Graz,280037,47.0707,15.4395,353,AT,Steiermark
+Linz,206638,48.306,14.2858,262,AT,Oberösterreich
+Salzburg,155031,47.8095,13.055,424,AT,Salzburg
+Innsbruck,132493,47.2625,11.4027,574,AT,Tirol
+Klagenfurt,100157,46.6247,14.3093,447,AT,Kärnten
+Villach,61418,46.6029,14.8749,501,AT,Kärnten
+Wels,59319,48.1827,14.2919,317,AT,Oberösterreich
+Sankt Pölten,51279,48.2083,15.6306,213,AT,Niederösterreich
+Hallein,56405,47.6757,13.2042,468,AT,Salzburg
+Dornbirn,48652,47.4474,9.7451,473,AT,Vorarlberg
+Bregenz,28374,47.5034,9.7465,400,AT,Vorarlberg
+Feldkirch,33574,47.2338,9.6019,470,AT,Vorarlberg
+Kufstein,18717,47.5897,12.1729,500,AT,Tirol
+Schwaz,14024,47.2919,11.7153,541,AT,Tirol
+Wörgl,13404,47.4857,12.0728,448,AT,Tirol
+Lienz,12156,46.8269,12.7684,659,AT,Tirol
+Reutte,12900,47.4914,10.7175,676,AT,Tirol
+Hoechst,6437,47.4461,9.6539,430,AT,Vorarlberg
+Lustenau,7888,47.4528,9.6958,430,AT,Vorarlberg
+Rankweil,10880,47.4569,9.6842,471,AT,Vorarlberg
+Goetzis,10885,47.4894,9.6897,466,AT,Vorarlberg
+Altach,6388,47.4689,9.6522,418,AT,Vorarlberg
+Schaan,5934,47.1758,9.5094,471,AT,Vorarlberg
+Ötztal,7900,47.265,10.915,810,AT,Tirol
+Imst,8641,47.2653,10.745,828,AT,Tirol
+Längenfeld,6540,47.26,10.98,645,AT,Tirol
+Telfs,6450,47.35,11.05,620,AT,Tirol
+Bad Ischl,13635,47.7128,13.6189,469,AT,Oberösterreich
+Zell am See,9906,47.3172,12.7964,757,AT,Salzburg
+Bischofshofen,10313,47.5981,13.205,486,AT,Salzburg
+Saalfelden,7500,47.5428,12.6361,738,AT,Salzburg
+Bad Gastein,5654,47.5189,13.1317,738,AT,Salzburg
+Bad Hofgastein,7450,47.5372,13.1956,858,AT,Salzburg
+Wiener Neustadt,42859,47.8137,16.2594,271,AT,Niederösterreich
+Steyr,37916,48.0419,14.4394,316,AT,Oberösterreich
+Leonding,25693,48.3419,14.2514,266,AT,Oberösterreich
+Traun,25090,48.3618,14.3203,270,AT,Oberösterreich
+Krems,23713,48.4144,15.5667,200,AT,Niederösterreich
+Eisenstadt,12904,47.845,16.5225,193,AT,Burgenland
+Enns,10050,48.1989,14.4733,281,AT,Oberösterreich
+Bad Ischl,13635,47.7128,13.6189,469,AT,Oberösterreich
+Vöcklabruck,12189,48.0074,13.6465,432,AT,Oberösterreich
+Waidhofen an der Ybbs,12012,48.0281,15.0361,293,AT,Niederösterreich
+Zwettl,11969,48.6144,15.2003,528,AT,Niederösterreich
+Gmunden,8062,48.0137,13.8011,425,AT,Oberösterreich
+Ried im Innkreis,6225,48.2149,13.4901,404,AT,Oberösterreich
+Grieskirchen,8049,48.2507,13.8347,411,AT,Oberösterreich
+Freistadt,7403,48.5033,14.5081,551,AT,Oberösterreich
+Rohrbach,5251,48.5547,13.6963,650,AT,Oberösterreich
+Ebensee,8618,47.8014,13.8561,423,AT,Oberösterreich
+Tulln,15282,48.3216,15.6311,181,AT,Niederösterreich
+Stockerau,14069,48.4084,15.8244,175,AT,Niederösterreich
+Gmünd,5079,48.7539,14.9806,520,AT,Niederösterreich
+Horn,6865,48.6747,15.6764,317,AT,Niederösterreich
+Szombathely,6894,47.2256,16.6219,201,AT,Burgenland
+Ödenburg,10000,47.85,16.6,200,AT,Burgenland
+Neusiedl am See,7145,47.9403,16.8508,115,AT,Burgenland
+Groß-Enzersdorf,8246,48.1711,16.5311,149,AT,Niederösterreich
+Süßenbrunn,11968,48.25,16.55,160,AT,Wien
+Stammersdorf,11205,48.2667,16.5167,165,AT,Wien
+Breitenlee,7452,48.25,16.55,165,AT,Wien
+Kagran,9854,48.25,16.45,155,AT,Wien
+Aspern,12543,48.2333,16.4833,155,AT,Wien
+Stadlau,8924,48.25,16.4667,155,AT,Wien
+Strebersdorf,9012,48.2833,16.5,190,AT,Wien
+Gerasdorf,5123,48.2667,16.5333,180,AT,Wien
+Fünfhaus,8756,48.1833,16.3667,200,AT,Wien
+Liesing,114615,48.1389,16.4222,180,AT,Wien
+Mauer,5412,48.1333,16.35,300,AT,Wien
+Perchtoldsdorf,8909,48.1469,16.2583,380,AT,Niederösterreich
+Modling,20430,48.0864,16.2875,310,AT,Niederösterreich
+Brunn am Gebirge,7889,48.0761,16.25,320,AT,Niederösterreich
+Groß-Enzersdorf,8246,48.1711,16.5311,149,AT,Niederösterreich
+Oberwart,8169,47.2869,16.2225,235,AT,Burgenland
+Zalaegerszeg,10000,47.2,16.1333,220,AT,Burgenland
+Trofaiach,8086,47.5833,15.0333,594,AT,Steiermark
+Bruck an der Mur,12349,47.5142,15.3761,499,AT,Steiermark
+Mürzzuschlag,9381,47.5333,15.65,639,AT,Steiermark
+Zurich,415215,47.3769,8.5472,408,CH,Zurich
+Genf,190637,46.2022,6.1432,375,CH,Genf
+Basel,173863,47.5596,7.5886,260,CH,Basel-Stadt
+Bern,133115,46.9479,7.4474,541,CH,Bern
+Lausanne,140099,46.5197,6.6323,372,CH,Waadt
+Winterthur,114186,47.5,8.725,439,CH,Zurich
+Luzern,81859,47.0502,8.3093,434,CH,Luzern
+Sankt Gallen,76458,47.4229,9.3767,661,CH,Sankt Gallen
+Lugano,63335,46.0051,8.9463,273,CH,Tessin
+Biel/Bienne,54762,47.1384,7.2474,426,CH,Bern
+Thun,43743,46.7569,7.6253,559,CH,Bern
+Koeniz,42089,46.9055,7.4397,560,CH,Bern
+Chur,33395,46.8547,9.5302,596,CH,Graubuenden
+Davos,11165,46.8055,9.8355,1560,CH,Graubuenden
+Fribourg,38267,46.805,7.1605,629,CH,Freiburg
+Schaffhausen,36958,47.6973,8.6361,364,CH,Schaffhausen
+Neuenburg,31915,47.001,6.9325,429,CH,Neuenburg
+Uster,36476,47.3398,8.7065,480,CH,Zurich
+Sitten,34399,46.2181,7.5632,482,CH,Wallis
+Wetzikon,25571,47.3239,8.7954,533,CH,Zurich
+Montreux,26778,46.4334,6.9118,372,CH,Waadt
+Rapperswil-Jona,27865,47.2286,8.8149,407,CH,Sankt Gallen
+Duebendorf,28889,47.406,8.6112,440,CH,Zurich
+Kriens,30206,47.055,8.3025,456,CH,Luzern
+Zug,30261,47.1733,8.517,424,CH,Zug
+Affoltern am Albis,20098,47.2856,8.4697,494,CH,Zurich
+Altstetten,24851,47.3742,8.4661,410,CH,Zurich
+Wil,24303,47.4791,8.7431,610,CH,Sankt Gallen
+Wadenswil,23020,47.2122,8.6847,410,CH,Zurich
+Kilchberg,14068,47.2908,8.5653,435,CH,Zurich
+Adliswil,18816,47.3031,8.5178,445,CH,Zurich
+Urdorf,13154,47.3561,8.3778,450,CH,Zurich
+Spreitenbach,13697,47.3769,8.3508,440,CH,Zurich
+Dietikon,27751,47.4333,8.4083,380,CH,Zurich
+Buchs,12872,47.4842,8.3792,360,CH,Zurich
+Regensdorf,15524,47.4592,8.43,400,CH,Zurich
+Birmensdorf,10063,47.4083,8.4325,420,CH,Zurich
+Oetwil am See,12085,47.3381,8.6714,395,CH,Zurich
+Herrliberg,11081,47.2903,8.7039,410,CH,Zurich
+Feldmeilen,12631,47.2761,8.7014,415,CH,Zurich
+Meilen,14297,47.2703,8.6964,420,CH,Zurich
+Staefa,13929,47.2567,8.7186,415,CH,Zurich
+Kueesnacht,11800,47.2947,8.578,445,CH,Zurich
+Zollikon,11871,47.3158,8.5942,430,CH,Zurich
+Uetikon am See,12353,47.3036,8.5992,435,CH,Zurich
+Erlenbach,10127,47.3156,8.5547,440,CH,Zurich
+Faellanden,11707,47.3236,8.5897,435,CH,Zurich
+Greifensee,11959,47.3536,8.6461,415,CH,Zurich
+Volketswil,12639,47.3714,8.6772,440,CH,Zurich
+Bubikon,12836,47.365,8.8131,500,CH,Zurich
+Bauma,10126,47.3929,8.8381,570,CH,Zurich
+Fehraltorf,10545,47.4058,8.8461,550,CH,Zurich
+Gossau,16920,47.4239,8.8583,590,CH,Zurich
+Andelfingen,9698,47.6583,8.7225,445,CH,Zurich
+Eglisau,8995,47.6071,8.5525,380,CH,Zurich
+Glattfelden,9098,47.5644,8.6003,395,CH,Zurich
+Frauenfeld,27570,47.5536,8.8933,406,CH,Thurgau
+Amriswil,12852,47.5328,9.0564,398,CH,Thurgau
+Romanshorn,8973,47.5664,8.9631,405,CH,Thurgau
+Arbon,14952,47.4667,9.43,400,CH,Thurgau
+Kreuzlingen,7750,47.6658,8.765,398,CH,Thurgau
+Buchs,7915,47.1922,9.4747,523,CH,Sankt Gallen
+Sargans,6099,47.4464,9.4461,520,CH,Sankt Gallen
+Mels,7203,47.4197,9.3844,568,CH,Sankt Gallen
+Glarus,12067,46.9583,9.0667,470,CH,Glarus
+Schwyz,16253,47.415,8.6658,640,CH,Schwyz
+Einsiedeln,16144,47.1331,8.7603,910,CH,Schwyz
+Steinen,5169,47.2183,8.6225,630,CH,Schwyz
+Stans,8247,46.9609,8.3661,455,CH,Nidwalden
+Sarnen,10347,46.8678,8.2439,471,CH,Obwalden
+Meiringen,9746,46.7328,8.3044,595,CH,Bern
+Burgdorf,9362,47.1856,8.3319,453,CH,Bern
+Langenthal,15598,47.2122,8.3922,418,CH,Bern
+Solothurn,17360,47.2019,7.5347,432,CH,Solothurn
+Olten,17749,47.3436,7.9083,398,CH,Solothurn
+Grenchen,17154,47.1819,7.7733,430,CH,Solothurn
+Sursee,10241,47.1722,8.1011,503,CH,Luzern
+Hochdorf,8066,47.1242,8.2342,459,CH,Luzern
+Emmen,12549,47.0639,8.3764,489,CH,Luzern
+Adligenswil,7268,47.0306,8.3686,469,CH,Luzern
+Ebikon,12282,47.1083,8.4281,450,CH,Luzern
+Sins,5891,47.2736,8.2986,404,CH,Aargau
+Wettingen,23169,47.4831,8.3089,330,CH,Aargau
+Ennetbaden,8191,47.4892,8.3039,320,CH,Aargau
+Turgi,8537,47.4928,8.355,338,CH,Aargau
+Rheinfelden,12213,47.5364,7.7894,278,CH,Aargau
+Liestal,13583,47.4833,7.7333,308,CH,Basel-Land
+Baden,16121,47.4714,8.3051,378,CH,Aargau
+Aarau,21404,47.3901,8.051,361,CH,Aargau
+Brugg,10000,47.4845,8.2063,339,CH,Aargau
+Bellinzona,18373,46.1978,9.0165,230,CH,Tessin
+Locarno,15175,46.1667,8.7833,196,CH,Tessin
+Ascona,5768,46.1581,8.7658,196,CH,Tessin
+Mendrisio,7300,45.8939,8.9813,243,CH,Tessin
+Chiasso,9049,45.8312,8.9465,225,CH,Tessin
+Porrentruy,6663,47.4481,7.0717,440,CH,Jura
+Delemont,11502,47.3645,7.3388,420,CH,Jura
+Yverdon-les-Bains,29639,46.62,6.6406,435,CH,Waadt
+Vevey,19353,46.4621,6.8413,375,CH,Waadt
+Pully,18222,46.5045,6.6753,375,CH,Waadt
+Nyon,31247,46.3831,6.2402,380,CH,Waadt
+Renens,31503,46.5303,6.5809,385,CH,Waadt
+Echallens,7170,46.7084,6.6361,628,CH,Waadt
+Morges,14903,46.4967,6.5042,390,CH,Waadt
+Aigle,10405,46.3239,6.9344,390,CH,Waadt
+Monthey,16733,46.2774,6.7722,385,CH,Wallis
+Martigny,15912,46.1018,7.7512,593,CH,Wallis
+Sierre,15999,46.3018,7.5413,570,CH,Wallis
+Ried-Brig,15000,46.3117,8.2572,681,CH,Wallis
+Bulle,20246,46.6189,7.2594,768,CH,Freiburg
+Romont,5800,46.6219,7.0583,814,CH,Freiburg
+La Chaux-de-Fonds,39474,47.1007,6.8228,1017,CH,Neuenburg
+Le Locle,9547,47.0525,6.7497,951,CH,Neuenburg

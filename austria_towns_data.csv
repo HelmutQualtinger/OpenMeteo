@@ -1,0 +1,192 @@
+name,federal_state,population,latitude,longitude,elevation
+Wien,Wien,1915502,48.2082,16.3738,171
+Graz,Steiermark,280037,47.0707,15.4395,353
+Linz,Oberösterreich,206638,48.306,14.2858,262
+Salzburg,Salzburg,155031,47.8095,13.055,424
+Innsbruck,Tirol,132493,47.2625,11.4027,574
+Klagenfurt,Kärnten,100157,46.6247,14.3093,447
+Villach,Kärnten,61418,46.6029,14.8749,501
+Wels,Oberösterreich,59319,48.1827,14.2919,317
+Sankt Pölten,Niederösterreich,51279,48.2083,15.6306,213
+Hallein,Salzburg,56405,47.6757,13.2042,468
+Dornbirn,Vorarlberg,48652,47.4474,9.7451,473
+Bregenz,Vorarlberg,28374,47.5034,9.7465,400
+Feldkirch,Vorarlberg,33574,47.2338,9.6019,470
+Kufstein,Tirol,18717,47.5897,12.1729,500
+Schwaz,Tirol,14024,47.2919,11.7153,541
+Wörgl,Tirol,13404,47.4857,12.0728,448
+Lienz,Tirol,12156,46.8269,12.7684,659
+Reutte,Tirol,12900,47.4914,10.7175,676
+Hoechst,Vorarlberg,6437,47.4461,9.6539,430
+Lustenau,Vorarlberg,7888,47.4528,9.6958,430
+Rankweil,Vorarlberg,10880,47.4569,9.6842,471
+Goetzis,Vorarlberg,10885,47.4894,9.6897,466
+Altach,Vorarlberg,6388,47.4689,9.6522,418
+Koblach,Vorarlberg,4187,47.4764,9.6539,433
+Moegglingen,Vorarlberg,2600,47.4733,9.7428,470
+Eichenberg,Vorarlberg,2250,47.4717,9.7025,437
+Lochau,Vorarlberg,1680,47.535,9.7742,402
+Hard,Vorarlberg,1620,47.5156,9.7497,399
+Gaendringen,Vorarlberg,1275,47.4775,9.7017,435
+Weiler,Vorarlberg,1440,47.495,9.6997,450
+Schwarzach,Vorarlberg,1180,47.4775,9.6822,445
+Ruggell,Vorarlberg,1950,47.2264,9.5233,462
+Schaan,Vorarlberg,5934,47.1758,9.5094,471
+Ötztal,Tirol,7900,47.265,10.915,810
+Imst,Tirol,8641,47.2653,10.745,828
+Ötztal-Bahnhof,Tirol,2100,47.25,10.91,805
+Längenfeld,Tirol,6540,47.26,10.98,645
+Solden,Tirol,4120,47.2575,10.9925,1377
+Obgruendl,Tirol,1540,47.31,10.9475,970
+Oetz,Tirol,1870,47.265,10.92,804
+Haiming,Tirol,4890,47.3075,10.85,570
+Karwendel,Tirol,1200,47.35,11.25,650
+Mittenwald,Tirol,2230,47.445,11.45,915
+Seefeld,Tirol,3065,47.3344,11.1883,1186
+Telfs,Tirol,6450,47.35,11.05,620
+Voelpnitz,Tirol,2180,47.36,11.36,680
+Wilnsdorf,Tirol,1800,47.37,11.25,720
+Bad Ischl,Oberösterreich,13635,47.7128,13.6189,469
+Zell am See,Salzburg,9906,47.3172,12.7964,757
+Bischofshofen,Salzburg,10313,47.5981,13.205,486
+Saalfelden,Salzburg,7500,47.5428,12.6361,738
+Sankt Johann,Salzburg,4570,47.6389,12.3583,629
+Radstadt,Salzburg,4270,47.4203,13.4469,828
+Abtenau,Salzburg,2720,47.6656,13.5339,524
+Annaberg,Salzburg,1960,47.6061,13.5311,678
+Hoefl-Goessing,Salzburg,1450,47.5811,13.5556,652
+Krispl,Salzburg,1230,47.5889,13.3894,636
+Schoenau am Koenigssee,Salzburg,1980,47.6564,12.9969,609
+Golling,Salzburg,3400,47.6089,13.1569,420
+Bad Gastein,Salzburg,5654,47.5189,13.1317,738
+Bad Hofgastein,Salzburg,7450,47.5372,13.1956,858
+Wagrain,Salzburg,3050,47.5253,13.5644,945
+Eben,Salzburg,1320,47.4906,13.5172,850
+Tweng,Salzburg,965,47.4681,13.6569,1082
+Untertauern,Salzburg,520,47.4325,13.7028,1237
+Wiener Neustadt,Niederösterreich,42859,47.8137,16.2594,271
+Steyr,Oberösterreich,37916,48.0419,14.4394,316
+Leonding,Oberösterreich,25693,48.3419,14.2514,266
+Traun,Oberösterreich,25090,48.3618,14.3203,270
+Krems,Niederösterreich,23713,48.4144,15.5667,200
+Eisenstadt,Burgenland,12904,47.845,16.5225,193
+Enns,Oberösterreich,10050,48.1989,14.4733,281
+Bad Ischl,Oberösterreich,13635,47.7128,13.6189,469
+Vöcklabruck,Oberösterreich,12189,48.0074,13.6465,432
+Waidhofen an der Ybbs,Niederösterreich,12012,48.0281,15.0361,293
+Zwettl,Niederösterreich,11969,48.6144,15.2003,528
+Scheibbs,Niederösterreich,3644,48.185,15.0589,308
+Gmunden,Oberösterreich,8062,48.0137,13.8011,425
+Ried im Innkreis,Oberösterreich,6225,48.2149,13.4901,404
+Grieskirchen,Oberösterreich,8049,48.2507,13.8347,411
+Freistadt,Oberösterreich,7403,48.5033,14.5081,551
+Rohrbach,Oberösterreich,5251,48.5547,13.6963,650
+Mauthausen,Oberösterreich,4456,48.3681,14.6042,323
+Grünau im Almtal,Oberösterreich,2039,47.7369,13.8942,722
+Mondsee,Oberösterreich,3084,48.0449,13.8589,481
+Ebensee,Oberösterreich,8618,47.8014,13.8561,423
+Traunkirchen,Oberösterreich,1721,47.8519,13.8703,423
+Wördern,Niederösterreich,2354,48.295,15.3694,213
+Tulln,Niederösterreich,15282,48.3216,15.6311,181
+Stockerau,Niederösterreich,14069,48.4084,15.8244,175
+Gmünd,Niederösterreich,5079,48.7539,14.9806,520
+Horn,Niederösterreich,6865,48.6747,15.6764,317
+Geras,Niederösterreich,2127,48.75,15.55,380
+Hardegsen,Niederösterreich,3217,48.6881,15.35,354
+Retz,Niederösterreich,4339,48.7569,15.7722,260
+Hardegg,Niederösterreich,755,48.8567,15.9306,255
+Raabs an der Thaya,Niederösterreich,1827,48.8189,15.5083,290
+Stadtschlaining,Burgenland,2220,47.3539,16.1736,267
+Großwarasdorf,Burgenland,1632,47.3667,16.3333,279
+Stegersbach,Burgenland,2436,47.2628,16.3667,210
+Pinkafeld,Burgenland,3734,47.3289,16.0956,241
+Bad Tatzmannsdorf,Burgenland,1545,47.1819,16.1856,211
+Köszeg,Burgenland,2752,47.3856,16.5422,250
+Szombathely,Burgenland,6894,47.2256,16.6219,201
+Jennersdorf,Burgenland,4059,47.1522,16.2111,200
+Güssing,Burgenland,3902,47.0719,16.0106,164
+Halbturn,Burgenland,1321,47.7411,16.9456,116
+Illmitz,Burgenland,1145,47.7628,16.9769,116
+Gols,Burgenland,2329,47.7711,16.9347,129
+Oslip,Burgenland,1649,47.7489,16.8539,120
+Frauenkirchen,Burgenland,2105,47.7347,16.8569,127
+Pamhagen,Burgenland,1258,47.85,17.0,116
+Fertöszentmiklós,Burgenland,1410,47.7378,16.7744,124
+Deutsch Jahrndorf,Burgenland,2144,47.7636,16.7789,131
+Andau,Burgenland,1357,47.8011,16.8422,119
+Mörbisch,Burgenland,693,47.7511,16.6681,124
+Ödenburg,Burgenland,10000,47.85,16.6,200
+Rust,Burgenland,1563,47.7319,16.5722,128
+Breitenbrunn,Burgenland,1028,47.7333,16.5,141
+Donnerskirchen,Burgenland,1247,47.8089,16.4281,129
+Wallern im Burgenland,Burgenland,1325,47.8833,16.45,137
+Purbach am Neusiedlersee,Burgenland,1107,47.8689,16.5225,131
+Wimpassing,Burgenland,1005,47.9039,16.5361,138
+Müllendorf,Burgenland,1352,47.8464,16.6003,135
+Sankt Margarethen,Burgenland,1352,47.8328,16.5833,136
+Oggau am Neusiedlersee,Burgenland,1852,47.9042,16.6269,130
+Jois,Burgenland,1852,47.9222,16.65,135
+Weiden am See,Burgenland,1478,47.9611,16.6667,114
+Neusiedl am See,Burgenland,7145,47.9403,16.8508,115
+Zurndorf,Burgenland,1816,48.0294,16.8833,118
+Andau,Burgenland,1357,47.8011,16.8422,119
+Apa,Burgenland,1125,48.1394,16.9139,117
+Deutsch-Jahrndorf,Burgenland,2144,47.7636,16.7789,131
+Schützen am Gebirge,Burgenland,1742,47.1356,16.2353,260
+Heiligenkreuz im Lafnitztal,Burgenland,1289,47.1719,16.1225,269
+Deutsch Feistritz,Steiermark,1890,46.9917,15.6333,446
+Pöllau,Steiermark,1806,47.4436,15.5758,540
+Felixdorf,Niederösterreich,2476,47.7081,16.2122,197
+Lassee,Niederösterreich,1124,48.1333,16.4,147
+Mannsdorf an der Donau,Niederösterreich,1856,48.1628,16.6239,152
+Deutsch-Wagram,Niederösterreich,1747,48.1681,16.6717,154
+Gerasdorf bei Gänserndorf,Niederösterreich,3143,48.1364,16.6578,155
+Groß-Enzersdorf,Niederösterreich,8246,48.1711,16.5311,149
+Süßenbrunn,Wien,11968,48.25,16.55,160
+Stammersdorf,Wien,11205,48.2667,16.5167,165
+Breitenlee,Wien,7452,48.25,16.55,165
+Kagran,Wien,9854,48.25,16.45,155
+Aspern,Wien,12543,48.2333,16.4833,155
+Hirschstetten,Wien,4598,48.25,16.45,155
+Stadlau,Wien,8924,48.25,16.4667,155
+Strebersdorf,Wien,9012,48.2833,16.5,190
+Gerasdorf,Wien,5123,48.2667,16.5333,180
+Grossenzersdorf,Wien,4156,48.1667,16.5333,155
+Fünfhaus,Wien,8756,48.1833,16.3667,200
+Kalksburg,Wien,2889,48.1667,16.3333,260
+Liesing,Wien,114615,48.1389,16.4222,180
+Mauer,Wien,5412,48.1333,16.35,300
+Breitenfurt,Wien,2389,48.1289,16.2578,470
+Perchtoldsdorf,Niederösterreich,8909,48.1469,16.2583,380
+Modling,Niederösterreich,20430,48.0864,16.2875,310
+Brunn am Gebirge,Niederösterreich,7889,48.0761,16.25,320
+Gumpoldskirchen,Niederösterreich,4112,48.0658,16.2333,324
+Groß-Enzersdorf,Niederösterreich,8246,48.1711,16.5311,149
+Gerasdorf,Niederösterreich,3143,48.1364,16.6578,155
+Oberwart,Burgenland,8169,47.2869,16.2225,235
+Markt Sankt Martin,Burgenland,1429,47.3033,16.3333,250
+Wiesfleck,Burgenland,1016,47.35,16.3833,245
+Antau,Burgenland,1286,47.4233,16.1842,235
+Draßmarkt,Burgenland,1624,47.4442,16.3547,240
+Deutsch Kaltenbrunn,Burgenland,1156,47.35,16.4,250
+Ollersdorf,Burgenland,1086,47.3333,16.25,230
+Bad Tatzmannsdorf,Burgenland,1545,47.1819,16.1856,211
+Unterschützen,Burgenland,1122,47.2333,16.0833,270
+Pilgersdorf,Burgenland,2132,47.2931,16.085,280
+Siget in der Wart,Burgenland,1256,47.3156,16.0458,289
+Unterwart,Burgenland,2654,47.25,16.1667,260
+Schachendorf,Burgenland,1268,47.1894,16.1111,277
+Aspangberg-Sankt Peter,Burgenland,1652,47.6,16.0333,354
+Raiding,Burgenland,1628,47.5611,16.0667,343
+Nikitsch,Burgenland,788,47.5028,16.0544,343
+Unterrabnitz,Burgenland,1062,47.5889,15.9333,357
+Rechnitz,Burgenland,2297,47.5375,15.9894,380
+Oberschützen,Burgenland,3157,47.3844,16.0561,350
+Markt Allhau,Burgenland,1452,47.4167,16.0833,319
+Unterkohlstätten,Burgenland,879,47.3333,16.0,320
+Zalaegerszeg,Burgenland,10000,47.2,16.1333,220
+Trofaiach,Steiermark,8086,47.5833,15.0333,594
+Bruck an der Mur,Steiermark,12349,47.5142,15.3761,499
+Krieglach,Steiermark,3198,47.55,15.4667,520
+Mürzzuschlag,Steiermark,9381,47.5333,15.65,639
+Sankt Annatob,Steiermark,3421,47.6128,15.5875,654
