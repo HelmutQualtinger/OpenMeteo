@@ -1,0 +1,51 @@
+name,population,latitude,longitude,elevation,country,region
+Berlin,3645000,52.5174,13.3951,36,DE,Berlin
+Hamburg,1844000,53.5503,10.0007,26,DE,Hamburg
+München,1471508,48.1371,11.5754,523,DE,Bayern
+Köln,1085664,50.9384,6.96,56,DE,Nordrhein-Westfalen
+Frankfurt am Main,750056,50.1106,8.6821,104,DE,Hessen
+Leipzig,628717,51.3406,12.3747,119,DE,Sachsen
+Stuttgart,623738,48.7784,9.18,246,DE,Baden-Württemberg
+Düsseldorf,621877,51.2254,6.7763,44,DE,Nordrhein-Westfalen
+Dortmund,587181,51.5142,7.4653,95,DE,Nordrhein-Westfalen
+Essen,582760,51.4582,7.0158,76,DE,Nordrhein-Westfalen
+Dresden,556871,51.0493,13.7381,122,DE,Sachsen
+Hannover,534830,52.3745,9.7386,62,DE,Niedersachsen
+Nürnberg,518365,49.4539,11.0773,299,DE,Bayern
+Duisburg,495784,51.435,6.7596,33,DE,Nordrhein-Westfalen
+Bochum,364760,51.4818,7.2197,96,DE,Nordrhein-Westfalen
+Wuppertal,354262,51.264,7.178,151,DE,Nordrhein-Westfalen
+Bielefeld,333846,52.0191,8.531,122,DE,Nordrhein-Westfalen
+Bonn,330779,50.7353,7.1025,67,DE,Nordrhein-Westfalen
+Karlsruhe,308436,49.0069,8.4034,120,DE,Baden-Württemberg
+Mannheim,307621,49.4893,8.4673,101,DE,Baden-Württemberg
+Augsburg,304413,48.369,10.898,488,DE,Bayern
+Wiesbaden,278297,50.082,8.2417,124,DE,Hessen
+Aachen,258849,50.7764,6.0839,178,DE,Nordrhein-Westfalen
+Mönchengladbach,256135,51.1947,6.4354,81,DE,Nordrhein-Westfalen
+Gelsenkirchen,255428,51.511,7.096,54,DE,Nordrhein-Westfalen
+Braunschweig,250556,52.2647,10.5236,75,DE,Niedersachsen
+Chemnitz,247421,50.8324,12.9189,304,DE,Sachsen
+Kiel,246714,54.3227,10.1356,6,DE,Schleswig-Holstein
+Halle an der Saale,236797,51.4822,11.9683,89,DE,Sachsen-Anhalt
+Magdeburg,231607,52.1315,11.6401,62,DE,Sachsen-Anhalt
+Freiburg im Breisgau,230940,47.9961,7.8494,279,DE,Baden-Württemberg
+Krefeld,222922,51.3331,6.5623,45,DE,Nordrhein-Westfalen
+Lübeck,219307,53.8664,10.6847,17,DE,Schleswig-Holstein
+Mainz,217626,49.9995,8.2736,97,DE,Rheinland-Pfalz
+Erfurt,213171,50.9778,11.0287,195,DE,Thüringen
+Rostock,207452,54.0887,12.14,17,DE,Mecklenburg-Vorpommern
+Potsdam,183300,52.4009,13.0591,33,DE,Brandenburg
+Saarbrücken,177874,49.2344,6.9964,199,DE,Saarland
+Oldenburg,169265,53.139,8.2146,11,DE,Niedersachsen
+Osnabrück,165053,52.272,8.0476,71,DE,Niedersachsen
+Leverkusen,161882,51.0325,6.9881,50,DE,Nordrhein-Westfalen
+Heidelberg,161430,49.4094,8.6947,120,DE,Baden-Württemberg
+Schwerin,159751,53.6288,11.4148,48,DE,Mecklenburg-Vorpommern
+Solingen,158913,51.1722,7.0846,227,DE,Nordrhein-Westfalen
+Darmstadt,158351,49.8728,8.6512,151,DE,Hessen
+Offenbach am Main,129503,50.1055,8.7611,110,DE,Hessen
+Ulm,125928,48.3985,9.9912,483,DE,Baden-Württemberg
+Wolfsburg,125746,52.4206,10.7862,67,DE,Niedersachsen
+Pforzheim,119755,48.8909,8.7026,259,DE,Baden-Württemberg
+Göttingen,117433,51.5328,9.9352,157,DE,Niedersachsen

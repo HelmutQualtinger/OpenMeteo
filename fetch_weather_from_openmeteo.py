@@ -458,7 +458,7 @@ def main():
             # Fetch weather in optimized batches (URL has length limit, so use batch size of 50)
             print(f"\nFetching weather data for {len(towns)} towns from Open-Meteo (batch requests)...")
 
-            batch_size = 50
+            batch_size = 10
             all_weather = []
             all_towns = []
             batch_num = 0
@@ -479,7 +479,7 @@ def main():
                 # Delay between batches to respect API rate limits
                 if batch_num < total_batches:
                     print(f"    Waiting 2 seconds before next batch...")
-                    time.sleep(1)
+                    time.sleep(5)
 
             if all_weather and all_towns:
                 print(f"✅ Fetched weather data for {len(all_weather)} locations.")

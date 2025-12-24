@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towns Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .town-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .town-card:hover {
+            transform: scale(1.05);
+        }
+        .town-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .town-name {
+            padding: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Towns Gallery</h1>
+    <div class="gallery">
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Aarau" alt="Photo of Aarau">
+            <div class="town-name">Aarau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Adligenswil" alt="Photo of Adligenswil">
+            <div class="town-name">Adligenswil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Adliswil" alt="Photo of Adliswil">
+            <div class="town-name">Adliswil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Affoltern+am+Albis" alt="Photo of Affoltern am Albis">
+            <div class="town-name">Affoltern am Albis</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Aigle" alt="Photo of Aigle">
+            <div class="town-name">Aigle</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Altach" alt="Photo of Altach">
+            <div class="town-name">Altach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Altstetten" alt="Photo of Altstetten">
+            <div class="town-name">Altstetten</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Amriswil" alt="Photo of Amriswil">
+            <div class="town-name">Amriswil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Andelfingen" alt="Photo of Andelfingen">
+            <div class="town-name">Andelfingen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Arbon" alt="Photo of Arbon">
+            <div class="town-name">Arbon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ascona" alt="Photo of Ascona">
+            <div class="town-name">Ascona</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Aspern" alt="Photo of Aspern">
+            <div class="town-name">Aspern</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bad+Gastein" alt="Photo of Bad Gastein">
+            <div class="town-name">Bad Gastein</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bad+Hofgastein" alt="Photo of Bad Hofgastein">
+            <div class="town-name">Bad Hofgastein</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bad+Ischl" alt="Photo of Bad Ischl">
+            <div class="town-name">Bad Ischl</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Baden" alt="Photo of Baden">
+            <div class="town-name">Baden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Basel" alt="Photo of Basel">
+            <div class="town-name">Basel</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bauma" alt="Photo of Bauma">
+            <div class="town-name">Bauma</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bellinzona" alt="Photo of Bellinzona">
+            <div class="town-name">Bellinzona</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bern" alt="Photo of Bern">
+            <div class="town-name">Bern</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Biel%2FBienne" alt="Photo of Biel/Bienne">
+            <div class="town-name">Biel/Bienne</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Birmensdorf" alt="Photo of Birmensdorf">
+            <div class="town-name">Birmensdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bischofshofen" alt="Photo of Bischofshofen">
+            <div class="town-name">Bischofshofen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bregenz" alt="Photo of Bregenz">
+            <div class="town-name">Bregenz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Breitenlee" alt="Photo of Breitenlee">
+            <div class="town-name">Breitenlee</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bruck+an+der+Mur" alt="Photo of Bruck an der Mur">
+            <div class="town-name">Bruck an der Mur</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Brugg" alt="Photo of Brugg">
+            <div class="town-name">Brugg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Brunn+am+Gebirge" alt="Photo of Brunn am Gebirge">
+            <div class="town-name">Brunn am Gebirge</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bubikon" alt="Photo of Bubikon">
+            <div class="town-name">Bubikon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Buchs" alt="Photo of Buchs">
+            <div class="town-name">Buchs</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Bulle" alt="Photo of Bulle">
+            <div class="town-name">Bulle</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Burgdorf" alt="Photo of Burgdorf">
+            <div class="town-name">Burgdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Chiasso" alt="Photo of Chiasso">
+            <div class="town-name">Chiasso</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Chur" alt="Photo of Chur">
+            <div class="town-name">Chur</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Davos" alt="Photo of Davos">
+            <div class="town-name">Davos</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Delemont" alt="Photo of Delemont">
+            <div class="town-name">Delemont</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Dietikon" alt="Photo of Dietikon">
+            <div class="town-name">Dietikon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Dornbirn" alt="Photo of Dornbirn">
+            <div class="town-name">Dornbirn</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Duebendorf" alt="Photo of Duebendorf">
+            <div class="town-name">Duebendorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ebensee" alt="Photo of Ebensee">
+            <div class="town-name">Ebensee</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ebikon" alt="Photo of Ebikon">
+            <div class="town-name">Ebikon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Echallens" alt="Photo of Echallens">
+            <div class="town-name">Echallens</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Eglisau" alt="Photo of Eglisau">
+            <div class="town-name">Eglisau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Einsiedeln" alt="Photo of Einsiedeln">
+            <div class="town-name">Einsiedeln</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Eisenstadt" alt="Photo of Eisenstadt">
+            <div class="town-name">Eisenstadt</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Emmen" alt="Photo of Emmen">
+            <div class="town-name">Emmen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ennetbaden" alt="Photo of Ennetbaden">
+            <div class="town-name">Ennetbaden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Enns" alt="Photo of Enns">
+            <div class="town-name">Enns</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Erlenbach" alt="Photo of Erlenbach">
+            <div class="town-name">Erlenbach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Faellanden" alt="Photo of Faellanden">
+            <div class="town-name">Faellanden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Fehraltorf" alt="Photo of Fehraltorf">
+            <div class="town-name">Fehraltorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Feldkirch" alt="Photo of Feldkirch">
+            <div class="town-name">Feldkirch</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Feldmeilen" alt="Photo of Feldmeilen">
+            <div class="town-name">Feldmeilen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Frauenfeld" alt="Photo of Frauenfeld">
+            <div class="town-name">Frauenfeld</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Freistadt" alt="Photo of Freistadt">
+            <div class="town-name">Freistadt</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Fribourg" alt="Photo of Fribourg">
+            <div class="town-name">Fribourg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=F%C3%BCnfhaus" alt="Photo of Fünfhaus">
+            <div class="town-name">Fünfhaus</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Genf" alt="Photo of Genf">
+            <div class="town-name">Genf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Gerasdorf" alt="Photo of Gerasdorf">
+            <div class="town-name">Gerasdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Glarus" alt="Photo of Glarus">
+            <div class="town-name">Glarus</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Glattfelden" alt="Photo of Glattfelden">
+            <div class="town-name">Glattfelden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Gm%C3%BCnd" alt="Photo of Gmünd">
+            <div class="town-name">Gmünd</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Gmunden" alt="Photo of Gmunden">
+            <div class="town-name">Gmunden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Goetzis" alt="Photo of Goetzis">
+            <div class="town-name">Goetzis</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Gossau" alt="Photo of Gossau">
+            <div class="town-name">Gossau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Graz" alt="Photo of Graz">
+            <div class="town-name">Graz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Greifensee" alt="Photo of Greifensee">
+            <div class="town-name">Greifensee</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Grenchen" alt="Photo of Grenchen">
+            <div class="town-name">Grenchen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Grieskirchen" alt="Photo of Grieskirchen">
+            <div class="town-name">Grieskirchen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Gro%C3%9F-Enzersdorf" alt="Photo of Groß-Enzersdorf">
+            <div class="town-name">Groß-Enzersdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Hallein" alt="Photo of Hallein">
+            <div class="town-name">Hallein</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Herrliberg" alt="Photo of Herrliberg">
+            <div class="town-name">Herrliberg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Hochdorf" alt="Photo of Hochdorf">
+            <div class="town-name">Hochdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Hoechst" alt="Photo of Hoechst">
+            <div class="town-name">Hoechst</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Horn" alt="Photo of Horn">
+            <div class="town-name">Horn</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Imst" alt="Photo of Imst">
+            <div class="town-name">Imst</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Innsbruck" alt="Photo of Innsbruck">
+            <div class="town-name">Innsbruck</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kagran" alt="Photo of Kagran">
+            <div class="town-name">Kagran</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kilchberg" alt="Photo of Kilchberg">
+            <div class="town-name">Kilchberg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Klagenfurt" alt="Photo of Klagenfurt">
+            <div class="town-name">Klagenfurt</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Koeniz" alt="Photo of Koeniz">
+            <div class="town-name">Koeniz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Krems" alt="Photo of Krems">
+            <div class="town-name">Krems</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kreuzlingen" alt="Photo of Kreuzlingen">
+            <div class="town-name">Kreuzlingen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kriens" alt="Photo of Kriens">
+            <div class="town-name">Kriens</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kueesnacht" alt="Photo of Kueesnacht">
+            <div class="town-name">Kueesnacht</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Kufstein" alt="Photo of Kufstein">
+            <div class="town-name">Kufstein</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=La+Chaux-de-Fonds" alt="Photo of La Chaux-de-Fonds">
+            <div class="town-name">La Chaux-de-Fonds</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=L%C3%A4ngenfeld" alt="Photo of Längenfeld">
+            <div class="town-name">Längenfeld</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Langenthal" alt="Photo of Langenthal">
+            <div class="town-name">Langenthal</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Lausanne" alt="Photo of Lausanne">
+            <div class="town-name">Lausanne</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Le+Locle" alt="Photo of Le Locle">
+            <div class="town-name">Le Locle</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Leonding" alt="Photo of Leonding">
+            <div class="town-name">Leonding</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Lienz" alt="Photo of Lienz">
+            <div class="town-name">Lienz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Liesing" alt="Photo of Liesing">
+            <div class="town-name">Liesing</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Liestal" alt="Photo of Liestal">
+            <div class="town-name">Liestal</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Linz" alt="Photo of Linz">
+            <div class="town-name">Linz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Locarno" alt="Photo of Locarno">
+            <div class="town-name">Locarno</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Lugano" alt="Photo of Lugano">
+            <div class="town-name">Lugano</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Lustenau" alt="Photo of Lustenau">
+            <div class="town-name">Lustenau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Luzern" alt="Photo of Luzern">
+            <div class="town-name">Luzern</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Martigny" alt="Photo of Martigny">
+            <div class="town-name">Martigny</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Mauer" alt="Photo of Mauer">
+            <div class="town-name">Mauer</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Meilen" alt="Photo of Meilen">
+            <div class="town-name">Meilen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Meiringen" alt="Photo of Meiringen">
+            <div class="town-name">Meiringen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Mels" alt="Photo of Mels">
+            <div class="town-name">Mels</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Mendrisio" alt="Photo of Mendrisio">
+            <div class="town-name">Mendrisio</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Modling" alt="Photo of Modling">
+            <div class="town-name">Modling</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Monthey" alt="Photo of Monthey">
+            <div class="town-name">Monthey</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Montreux" alt="Photo of Montreux">
+            <div class="town-name">Montreux</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Morges" alt="Photo of Morges">
+            <div class="town-name">Morges</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=M%C3%BCrzzuschlag" alt="Photo of Mürzzuschlag">
+            <div class="town-name">Mürzzuschlag</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Neuenburg" alt="Photo of Neuenburg">
+            <div class="town-name">Neuenburg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Neusiedl+am+See" alt="Photo of Neusiedl am See">
+            <div class="town-name">Neusiedl am See</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Nyon" alt="Photo of Nyon">
+            <div class="town-name">Nyon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Oberwart" alt="Photo of Oberwart">
+            <div class="town-name">Oberwart</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=%C3%96denburg" alt="Photo of Ödenburg">
+            <div class="town-name">Ödenburg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Oetwil+am+See" alt="Photo of Oetwil am See">
+            <div class="town-name">Oetwil am See</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Olten" alt="Photo of Olten">
+            <div class="town-name">Olten</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=%C3%96tztal" alt="Photo of Ötztal">
+            <div class="town-name">Ötztal</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Perchtoldsdorf" alt="Photo of Perchtoldsdorf">
+            <div class="town-name">Perchtoldsdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Porrentruy" alt="Photo of Porrentruy">
+            <div class="town-name">Porrentruy</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Pully" alt="Photo of Pully">
+            <div class="town-name">Pully</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Rankweil" alt="Photo of Rankweil">
+            <div class="town-name">Rankweil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Rapperswil-Jona" alt="Photo of Rapperswil-Jona">
+            <div class="town-name">Rapperswil-Jona</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Regensdorf" alt="Photo of Regensdorf">
+            <div class="town-name">Regensdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Renens" alt="Photo of Renens">
+            <div class="town-name">Renens</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Reutte" alt="Photo of Reutte">
+            <div class="town-name">Reutte</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Rheinfelden" alt="Photo of Rheinfelden">
+            <div class="town-name">Rheinfelden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ried+im+Innkreis" alt="Photo of Ried im Innkreis">
+            <div class="town-name">Ried im Innkreis</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Ried-Brig" alt="Photo of Ried-Brig">
+            <div class="town-name">Ried-Brig</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Rohrbach" alt="Photo of Rohrbach">
+            <div class="town-name">Rohrbach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Romanshorn" alt="Photo of Romanshorn">
+            <div class="town-name">Romanshorn</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Romont" alt="Photo of Romont">
+            <div class="town-name">Romont</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Saalfelden" alt="Photo of Saalfelden">
+            <div class="town-name">Saalfelden</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Salzburg" alt="Photo of Salzburg">
+            <div class="town-name">Salzburg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sankt+Gallen" alt="Photo of Sankt Gallen">
+            <div class="town-name">Sankt Gallen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sankt+P%C3%B6lten" alt="Photo of Sankt Pölten">
+            <div class="town-name">Sankt Pölten</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sargans" alt="Photo of Sargans">
+            <div class="town-name">Sargans</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sarnen" alt="Photo of Sarnen">
+            <div class="town-name">Sarnen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Schaan" alt="Photo of Schaan">
+            <div class="town-name">Schaan</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Schaffhausen" alt="Photo of Schaffhausen">
+            <div class="town-name">Schaffhausen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Schwaz" alt="Photo of Schwaz">
+            <div class="town-name">Schwaz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Schwyz" alt="Photo of Schwyz">
+            <div class="town-name">Schwyz</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sierre" alt="Photo of Sierre">
+            <div class="town-name">Sierre</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sins" alt="Photo of Sins">
+            <div class="town-name">Sins</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sitten" alt="Photo of Sitten">
+            <div class="town-name">Sitten</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Solothurn" alt="Photo of Solothurn">
+            <div class="town-name">Solothurn</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Spreitenbach" alt="Photo of Spreitenbach">
+            <div class="town-name">Spreitenbach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Stadlau" alt="Photo of Stadlau">
+            <div class="town-name">Stadlau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Staefa" alt="Photo of Staefa">
+            <div class="town-name">Staefa</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Stammersdorf" alt="Photo of Stammersdorf">
+            <div class="town-name">Stammersdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Stans" alt="Photo of Stans">
+            <div class="town-name">Stans</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Steinen" alt="Photo of Steinen">
+            <div class="town-name">Steinen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Steyr" alt="Photo of Steyr">
+            <div class="town-name">Steyr</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Stockerau" alt="Photo of Stockerau">
+            <div class="town-name">Stockerau</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Strebersdorf" alt="Photo of Strebersdorf">
+            <div class="town-name">Strebersdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Sursee" alt="Photo of Sursee">
+            <div class="town-name">Sursee</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=S%C3%BC%C3%9Fenbrunn" alt="Photo of Süßenbrunn">
+            <div class="town-name">Süßenbrunn</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Szombathely" alt="Photo of Szombathely">
+            <div class="town-name">Szombathely</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Telfs" alt="Photo of Telfs">
+            <div class="town-name">Telfs</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Thun" alt="Photo of Thun">
+            <div class="town-name">Thun</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Traun" alt="Photo of Traun">
+            <div class="town-name">Traun</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Trofaiach" alt="Photo of Trofaiach">
+            <div class="town-name">Trofaiach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Tulln" alt="Photo of Tulln">
+            <div class="town-name">Tulln</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Turgi" alt="Photo of Turgi">
+            <div class="town-name">Turgi</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Uetikon+am+See" alt="Photo of Uetikon am See">
+            <div class="town-name">Uetikon am See</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Urdorf" alt="Photo of Urdorf">
+            <div class="town-name">Urdorf</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Uster" alt="Photo of Uster">
+            <div class="town-name">Uster</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Vevey" alt="Photo of Vevey">
+            <div class="town-name">Vevey</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Villach" alt="Photo of Villach">
+            <div class="town-name">Villach</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=V%C3%B6cklabruck" alt="Photo of Vöcklabruck">
+            <div class="town-name">Vöcklabruck</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Volketswil" alt="Photo of Volketswil">
+            <div class="town-name">Volketswil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wadenswil" alt="Photo of Wadenswil">
+            <div class="town-name">Wadenswil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Waidhofen+an+der+Ybbs" alt="Photo of Waidhofen an der Ybbs">
+            <div class="town-name">Waidhofen an der Ybbs</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wels" alt="Photo of Wels">
+            <div class="town-name">Wels</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wettingen" alt="Photo of Wettingen">
+            <div class="town-name">Wettingen</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wetzikon" alt="Photo of Wetzikon">
+            <div class="town-name">Wetzikon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wien" alt="Photo of Wien">
+            <div class="town-name">Wien</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wiener+Neustadt" alt="Photo of Wiener Neustadt">
+            <div class="town-name">Wiener Neustadt</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Wil" alt="Photo of Wil">
+            <div class="town-name">Wil</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Winterthur" alt="Photo of Winterthur">
+            <div class="town-name">Winterthur</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=W%C3%B6rgl" alt="Photo of Wörgl">
+            <div class="town-name">Wörgl</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Yverdon-les-Bains" alt="Photo of Yverdon-les-Bains">
+            <div class="town-name">Yverdon-les-Bains</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zalaegerszeg" alt="Photo of Zalaegerszeg">
+            <div class="town-name">Zalaegerszeg</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zell+am+See" alt="Photo of Zell am See">
+            <div class="town-name">Zell am See</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zollikon" alt="Photo of Zollikon">
+            <div class="town-name">Zollikon</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zug" alt="Photo of Zug">
+            <div class="town-name">Zug</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zurich" alt="Photo of Zurich">
+            <div class="town-name">Zurich</div>
+        </div>
+
+        <div class="town-card">
+            <img src="https://placehold.co/600x400/EEE/31343C?text=Zwettl" alt="Photo of Zwettl">
+            <div class="town-name">Zwettl</div>
+        </div>
+
+    </div>
+</body>
+</html>

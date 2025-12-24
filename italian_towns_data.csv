@@ -1,0 +1,52 @@
+name,region,population,latitude,longitude,elevation,country
+Rom,Latium,2873494,41.9028,12.4964,21,IT
+Mailand,Lombardei,1352638,45.4642,9.19,122,IT
+Neapel,Kampanien,909048,40.8518,14.2681,17,IT
+Turin,Piemont,872367,45.0708,7.6869,239,IT
+Palermo,Sizilien,662275,38.1157,13.3615,72,IT
+Genua,Ligurien,580223,44.4056,8.9463,6,IT
+Bologna,Emilia-Romagna,389136,44.4949,11.3426,54,IT
+Florenz,Toskana,379808,43.7696,11.2558,50,IT
+Venedig,Venetien,258685,45.4408,12.3155,1,IT
+Messina,Sizilien,238997,38.1938,15.554,3,IT
+Verona,Venetien,257275,45.4384,10.9916,59,IT
+Bari,Apulien,277110,41.1171,16.8706,9,IT
+Catania,Sizilien,313110,37.5085,15.0873,7,IT
+Triest,Friaul-Julisch Venetien,204158,45.65,13.7789,2,IT
+Brescia,Lombardei,193925,45.5387,10.2217,149,IT
+Parma,Emilia-Romagna,175895,44.8015,10.3279,55,IT
+Pisa,Toskana,85940,43.7228,10.3966,2,IT
+Modena,Emilia-Romagna,185308,44.6472,10.9252,34,IT
+Reggio di Calabria,Kalabrien,172844,38.1156,15.6915,71,IT
+Tarent,Apulien,199322,40.4772,17.2272,1,IT
+Perugia,Umbrien,148899,43.1122,12.3896,493,IT
+Padua,Venetien,210822,45.406,11.8776,12,IT
+Palermo,Sizilien,662275,38.1157,13.3615,72,IT
+Reggio di Emilia,Emilia-Romagna,169793,44.6989,10.6294,57,IT
+Ravenna,Emilia-Romagna,158337,44.4184,12.1939,1,IT
+Lecce,Apulien,95651,40.3569,18.172,48,IT
+Ancona,Marche,101997,43.6158,13.5007,16,IT
+Cremona,Lombardei,71752,45.1353,10.0253,66,IT
+Piacenza,Emilia-Romagna,104459,45.0527,9.7028,61,IT
+Ferrara,Emilia-Romagna,132009,44.8381,11.6256,4,IT
+Alessandria,Piemont,92706,44.9122,8.627,95,IT
+Asti,Piemont,73440,44.8956,8.1945,123,IT
+Trento,Trentino-Südtirol,123780,46.0664,11.1208,194,IT
+Bozen,Trentino-Südtirol,107260,46.4983,11.3361,262,IT
+Gorizia,Friaul-Julisch Venetien,35472,45.9589,13.6197,84,IT
+Udine,Friaul-Julisch Venetien,97458,46.0627,13.2347,130,IT
+Civitavecchia,Latium,55697,42.0968,11.8036,6,IT
+Tivoli,Latium,56671,41.9608,12.7951,235,IT
+Frascati,Latium,21970,41.8033,12.6655,320,IT
+Siena,Toskana,53776,43.3185,11.3304,322,IT
+Arezzo,Toskana,99155,43.4653,11.8794,296,IT
+Lucca,Toskana,89370,43.8439,10.5035,19,IT
+Livorno,Toskana,156245,43.552,10.3038,2,IT
+Prato,Toskana,193262,43.8755,11.0968,61,IT
+Pistoia,Toskana,90187,43.9347,10.9169,68,IT
+Massa,Toskana,69260,44.0156,10.1372,65,IT
+Montecatini Terme,Toskana,20130,43.8819,10.7708,26,IT
+Chianti,Toskana,15000,43.2833,11.45,400,IT
+Riva del Garda,Trentino-Südtirol,15750,45.8855,10.8419,65,IT
+Meran,Trentino-Südtirol,40523,46.6669,11.1597,324,IT
+Bruneck,Trentino-Südtirol,13519,46.4094,11.9405,787,IT

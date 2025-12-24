@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  openmeteo-scheduler:
+    build: .
+    container_name: openmeteo-scheduler
+    env_file:
+      - .env
+    environment:
+      - TZ=Europe/Zurich
+    restart: unless-stopped

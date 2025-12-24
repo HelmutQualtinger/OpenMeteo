@@ -1,0 +1,62 @@
+italian_towns_data = [
+    {"name": "Rom", "region": "Latium", "population": 2873494, "latitude": 41.9028, "longitude": 12.4964, "elevation": 21, "country": "IT"},
+    {"name": "Mailand", "region": "Lombardei", "population": 1352638, "latitude": 45.4642, "longitude": 9.1900, "elevation": 122, "country": "IT"},
+    {"name": "Neapel", "region": "Kampanien", "population": 909048, "latitude": 40.8518, "longitude": 14.2681, "elevation": 17, "country": "IT"},
+    {"name": "Turin", "region": "Piemont", "population": 872367, "latitude": 45.0708, "longitude": 7.6869, "elevation": 239, "country": "IT"},
+    {"name": "Palermo", "region": "Sizilien", "population": 662275, "latitude": 38.1157, "longitude": 13.3615, "elevation": 72, "country": "IT"},
+    {"name": "Genua", "region": "Ligurien", "population": 580223, "latitude": 44.4056, "longitude": 8.9463, "elevation": 6, "country": "IT"},
+    {"name": "Bologna", "region": "Emilia-Romagna", "population": 389136, "latitude": 44.4949, "longitude": 11.3426, "elevation": 54, "country": "IT"},
+    {"name": "Florenz", "region": "Toskana", "population": 379808, "latitude": 43.7696, "longitude": 11.2558, "elevation": 50, "country": "IT"},
+    {"name": "Venedig", "region": "Venetien", "population": 258685, "latitude": 45.4408, "longitude": 12.3155, "elevation": 1, "country": "IT"},
+    {"name": "Messina", "region": "Sizilien", "population": 238997, "latitude": 38.1938, "longitude": 15.5540, "elevation": 3, "country": "IT"},
+    {"name": "Verona", "region": "Venetien", "population": 257275, "latitude": 45.4384, "longitude": 10.9916, "elevation": 59, "country": "IT"},
+    {"name": "Bari", "region": "Apulien", "population": 277110, "latitude": 41.1171, "longitude": 16.8706, "elevation": 9, "country": "IT"},
+    {"name": "Catania", "region": "Sizilien", "population": 313110, "latitude": 37.5085, "longitude": 15.0873, "elevation": 7, "country": "IT"},
+    {"name": "Triest", "region": "Friaul-Julisch Venetien", "population": 204158, "latitude": 45.6500, "longitude": 13.7789, "elevation": 2, "country": "IT"},
+    {"name": "Brescia", "region": "Lombardei", "population": 193925, "latitude": 45.5387, "longitude": 10.2217, "elevation": 149, "country": "IT"},
+    {"name": "Parma", "region": "Emilia-Romagna", "population": 175895, "latitude": 44.8015, "longitude": 10.3279, "elevation": 55, "country": "IT"},
+    {"name": "Pisa", "region": "Toskana", "population": 85940, "latitude": 43.7228, "longitude": 10.3966, "elevation": 2, "country": "IT"},
+    {"name": "Modena", "region": "Emilia-Romagna", "population": 185308, "latitude": 44.6472, "longitude": 10.9252, "elevation": 34, "country": "IT"},
+    {"name": "Reggio di Calabria", "region": "Kalabrien", "population": 172844, "latitude": 38.1156, "longitude": 15.6915, "elevation": 71, "country": "IT"},
+    {"name": "Tarent", "region": "Apulien", "population": 199322, "latitude": 40.4772, "longitude": 17.2272, "elevation": 1, "country": "IT"},
+    {"name": "Perugia", "region": "Umbrien", "population": 148899, "latitude": 43.1122, "longitude": 12.3896, "elevation": 493, "country": "IT"},
+    {"name": "Padua", "region": "Venetien", "population": 210822, "latitude": 45.4060, "longitude": 11.8776, "elevation": 12, "country": "IT"},
+    {"name": "Palermo", "region": "Sizilien", "population": 662275, "latitude": 38.1157, "longitude": 13.3615, "elevation": 72, "country": "IT"},
+    {"name": "Reggio di Emilia", "region": "Emilia-Romagna", "population": 169793, "latitude": 44.6989, "longitude": 10.6294, "elevation": 57, "country": "IT"},
+    {"name": "Ravenna", "region": "Emilia-Romagna", "population": 158337, "latitude": 44.4184, "longitude": 12.1939, "elevation": 1, "country": "IT"},
+    {"name": "Lecce", "region": "Apulien", "population": 95651, "latitude": 40.3569, "longitude": 18.1720, "elevation": 48, "country": "IT"},
+    {"name": "Ancona", "region": "Marche", "population": 101997, "latitude": 43.6158, "longitude": 13.5007, "elevation": 16, "country": "IT"},
+    {"name": "Cremona", "region": "Lombardei", "population": 71752, "latitude": 45.1353, "longitude": 10.0253, "elevation": 66, "country": "IT"},
+    {"name": "Piacenza", "region": "Emilia-Romagna", "population": 104459, "latitude": 45.0527, "longitude": 9.7028, "elevation": 61, "country": "IT"},
+    {"name": "Ferrara", "region": "Emilia-Romagna", "population": 132009, "latitude": 44.8381, "longitude": 11.6256, "elevation": 4, "country": "IT"},
+    {"name": "Alessandria", "region": "Piemont", "population": 92706, "latitude": 44.9122, "longitude": 8.6270, "elevation": 95, "country": "IT"},
+    {"name": "Asti", "region": "Piemont", "population": 73440, "latitude": 44.8956, "longitude": 8.1945, "elevation": 123, "country": "IT"},
+    {"name": "Trento", "region": "Trentino-Südtirol", "population": 123780, "latitude": 46.0664, "longitude": 11.1208, "elevation": 194, "country": "IT"},
+    {"name": "Bozen", "region": "Trentino-Südtirol", "population": 107260, "latitude": 46.4983, "longitude": 11.3361, "elevation": 262, "country": "IT"},
+    {"name": "Gorizia", "region": "Friaul-Julisch Venetien", "population": 35472, "latitude": 45.9589, "longitude": 13.6197, "elevation": 84, "country": "IT"},
+    {"name": "Udine", "region": "Friaul-Julisch Venetien", "population": 97458, "latitude": 46.0627, "longitude": 13.2347, "elevation": 130, "country": "IT"},
+    {"name": "Civitavecchia", "region": "Latium", "population": 55697, "latitude": 42.0968, "longitude": 11.8036, "elevation": 6, "country": "IT"},
+    {"name": "Tivoli", "region": "Latium", "population": 56671, "latitude": 41.9608, "longitude": 12.7951, "elevation": 235, "country": "IT"},
+    {"name": "Frascati", "region": "Latium", "population": 21970, "latitude": 41.8033, "longitude": 12.6655, "elevation": 320, "country": "IT"},
+    {"name": "Siena", "region": "Toskana", "population": 53776, "latitude": 43.3185, "longitude": 11.3304, "elevation": 322, "country": "IT"},
+    {"name": "Arezzo", "region": "Toskana", "population": 99155, "latitude": 43.4653, "longitude": 11.8794, "elevation": 296, "country": "IT"},
+    {"name": "Lucca", "region": "Toskana", "population": 89370, "latitude": 43.8439, "longitude": 10.5035, "elevation": 19, "country": "IT"},
+    {"name": "Livorno", "region": "Toskana", "population": 156245, "latitude": 43.5520, "longitude": 10.3038, "elevation": 2, "country": "IT"},
+    {"name": "Prato", "region": "Toskana", "population": 193262, "latitude": 43.8755, "longitude": 11.0968, "elevation": 61, "country": "IT"},
+    {"name": "Pistoia", "region": "Toskana", "population": 90187, "latitude": 43.9347, "longitude": 10.9169, "elevation": 68, "country": "IT"},
+    {"name": "Massa", "region": "Toskana", "population": 69260, "latitude": 44.0156, "longitude": 10.1372, "elevation": 65, "country": "IT"},
+    {"name": "Montecatini Terme", "region": "Toskana", "population": 20130, "latitude": 43.8819, "longitude": 10.7708, "elevation": 26, "country": "IT"},
+    {"name": "Chianti", "region": "Toskana", "population": 15000, "latitude": 43.2833, "longitude": 11.4500, "elevation": 400, "country": "IT"},
+    {"name": "Riva del Garda", "region": "Trentino-Südtirol", "population": 15750, "latitude": 45.8855, "longitude": 10.8419, "elevation": 65, "country": "IT"},
+    {"name": "Meran", "region": "Trentino-Südtirol", "population": 40523, "latitude": 46.6669, "longitude": 11.1597, "elevation": 324, "country": "IT"},
+    {"name": "Bruneck", "region": "Trentino-Südtirol", "population": 13519, "latitude": 46.4094, "longitude": 11.9405, "elevation": 787, "country": "IT"},
+]
+
+# Header for CSV export compatibility
+csv_header = "name,region,population,latitude,longitude,elevation,country"
+
+if __name__ == "__main__":
+    # Display the data
+    print(csv_header)
+    for town in italian_towns_data:
+        print(f"{town['name']},{town['region']},{town['population']},{town['latitude']},{town['longitude']},{town['elevation']},{town['country']}")

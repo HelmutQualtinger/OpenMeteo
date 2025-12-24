@@ -5,6 +5,7 @@ import os
 # Define file paths and output file
 austria_csv = 'austria_towns_data.csv'
 swiss_csv = 'swiss_towns_data.csv'
+italian_csv = 'italian_towns_data.csv'
 output_csv = 'all_towns_data.csv'
 population_column = 'population' # User confirmed this name
 
@@ -14,6 +15,9 @@ if not os.path.exists(austria_csv):
     sys.exit(1)
 if not os.path.exists(swiss_csv):
     print(f"Error: File not found - {swiss_csv}. Please ensure it is in the current directory.")
+    sys.exit(1)
+if not os.path.exists(italian_csv):
+    print(f"Error: File not found - {italian_csv}. Please ensure it is in the current directory.")
     sys.exit(1)
 
 try:
@@ -33,20 +37,34 @@ try:
         print(f"Warning: 'canton' column not found in {swiss_csv}. Swiss regions might not be mapped correctly.")
     print(f"Read {len(df_swiss)} towns from {swiss_csv}")
 
+    # Read Italian data
+    df_italian = pd.read_csv(italian_csv)
+    df_italian['country'] = 'IT'
+    # Assuming 'region' is the column for Italian region
+    if 'region' not in df_italian.columns:
+        print(f"Warning: 'region' column not found in {italian_csv}. Italian regions might not be mapped correctly.")
+    print(f"Read {len(df_italian)} towns from {italian_csv}")
+
     # Combine dataframes
-    df_combined = pd.concat([df_austria, df_swiss], ignore_index=True)
+    df_combined = pd.concat([df_austria, df_swiss, df_italian], ignore_index=True)
     print(f"Combined data has {len(df_combined)} towns.")
 
-    # Create the 'region' column by combining 'federal_state' and 'canton'
-    # Use combine_first to merge non-null values from federal_state or canton
-    # This assumes that both 'federal_state' and 'canton' columns might exist after concat,
-    # one of which will have NaNs for a given country.
+    # Create the 'region' column by combining 'federal_state', 'canton', and handling existing 'region'
+    # Use combine_first to merge non-null values from federal_state, canton, or region
     region_cols_found = False
     if 'federal_state' in df_combined.columns and 'canton' in df_combined.columns:
-        df_combined['region'] = df_combined['federal_state'].combine_first(df_combined['canton'])
-        df_combined = df_combined.drop(columns=['federal_state', 'canton'])
-        region_cols_found = True
-        print("Created 'region' column by combining 'federal_state' and 'canton', and dropped original columns.")
+        if 'region' in df_combined.columns:
+            # Combine all three sources
+            df_combined['region'] = df_combined['federal_state'].combine_first(df_combined['canton']).combine_first(df_combined['region'])
+            df_combined = df_combined.drop(columns=['federal_state', 'canton'])
+            region_cols_found = True
+            print("Created 'region' column by combining 'federal_state', 'canton', and existing 'region', and dropped original columns.")
+        else:
+            # Combine federal_state and canton
+            df_combined['region'] = df_combined['federal_state'].combine_first(df_combined['canton'])
+            df_combined = df_combined.drop(columns=['federal_state', 'canton'])
+            region_cols_found = True
+            print("Created 'region' column by combining 'federal_state' and 'canton', and dropped original columns.")
     elif 'federal_state' in df_combined.columns:
         df_combined.rename(columns={'federal_state': 'region'}, inplace=True)
         print("Renamed 'federal_state' to 'region' for Austrian data.")
@@ -55,8 +73,9 @@ try:
         df_combined.rename(columns={'canton': 'region'}, inplace=True)
         print("Renamed 'canton' to 'region' for Swiss data.")
         region_cols_found = True
-    else:
-        print("Warning: Neither 'federal_state' nor 'canton' columns were found for region mapping. 'region' column will not be populated.")
+
+    if not region_cols_found and 'region' not in df_combined.columns:
+        print("Warning: No region column found for region mapping. 'region' column will not be populated.")
 
     # Convert population column to numeric, coercing errors to NaN
     df_combined[population_column] = pd.to_numeric(df_combined[population_column], errors='coerce')
